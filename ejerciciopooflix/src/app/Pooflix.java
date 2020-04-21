@@ -34,6 +34,14 @@ public class Pooflix {
         ep1temp1sab.numero = 1;
         ep1temp1sab.temporadas = temp1;
         temp1.episodios.add(ep1temp1sab);
+
+        Webisodio webi = new Webisodio();
+        webi.numero = 666;
+        webi.nombre = "Especial de navidad";
+        webi.url = "http://pooflix.com";
+
+        temp1.episodios.add(webi);
+        webi.temporadas = temp1;
         
         Episodio ep2tem1sab = new Episodio();
         ep2tem1sab.nombre = "El bautismo oscuro";
@@ -75,6 +83,8 @@ public class Pooflix {
         sabrina.elenco.add(actorsab);
 
         this.series.add(sabrina);
+
+        
 
     }
 

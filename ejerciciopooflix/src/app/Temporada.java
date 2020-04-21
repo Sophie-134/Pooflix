@@ -17,4 +17,21 @@ public class Temporada {
 
     }
 
+    /**
+     * obtiene un episodio en base a la posicion dentro del ArrayList. Recordar que
+     * los ArrayList la primer posicion es la 0
+     */
+    public Episodio getEpisodioAtPosicion(int pos) {
+        return this.episodios.get(pos);
+    }
+
+    public List<Webisodio> obtenerWebsodios() {
+        List<Webisodio> lista = new ArrayList<>();
+        for (Episodio epi : this.episodios) {
+            if (epi instanceof Webisodio)
+                lista.add((Webisodio) epi);
+        }
+        return lista;
+    }
+
 }
