@@ -29,37 +29,38 @@ public class Pooflix {
         Temporada temp1 = new Temporada();
         temp1.numero = 1;
         sabrina.temporadas.add(temp1);
-        Episodio ep1temp1sab = new Episodio();
-        ep1temp1sab.nombre = "El país de octubre";
-        ep1temp1sab.numero = 1;
+        Episodio ep1temp1sab = new Episodio(1, "El país de octubre", 60);
+        
+        /*ep1temp1sab.nombre = "El país de octubre";
+        ep1temp1sab.numero = 1;*/
         ep1temp1sab.temporadas = temp1;
         temp1.episodios.add(ep1temp1sab);
 
-        Webisodio webi = new Webisodio();
-        webi.numero = 666;
+        Webisodio webi = new Webisodio(666, "Especial de navidad", 20, "http://pooflix.com");
+        /*webi.numero = 666;
         webi.nombre = "Especial de navidad";
-        webi.url = "http://pooflix.com";
+        webi.url = "http://pooflix.com";*/
 
         temp1.episodios.add(webi);
         webi.temporadas = temp1;
         
-        Episodio ep2tem1sab = new Episodio();
-        ep2tem1sab.nombre = "El bautismo oscuro";
-        ep2tem1sab.numero = 2;
+        Episodio ep2tem1sab = new Episodio(2, "El bautismo oscuro", 60);
+        /*ep2tem1sab.nombre = "El bautismo oscuro";
+        ep2tem1sab.numero = 2;*/
         ep2tem1sab.temporadas = temp1;
         temp1.episodios.add(ep2tem1sab);
 
         Temporada temp2 = new Temporada();
         temp2.numero = 2;
         sabrina.temporadas.add(temp2);
-        Episodio ep12temp2sab = new Episodio();
-        ep12temp2sab.nombre = "La epifanía";
-        ep12temp2sab.numero = 12;
+        Episodio ep12temp2sab = new Episodio(12, "La epifanía", 60);
+        /*ep12temp2sab.nombre = "La epifanía";
+        ep12temp2sab.numero = 12;*/
         ep12temp2sab.temporadas = temp2;
         temp2.episodios.add(ep12temp2sab);
-        Episodio ep13temp2sab = new Episodio();
-        ep13temp2sab.nombre = "La pasión de Sabrina Spellman";
-        ep13temp2sab.numero = 13;
+        Episodio ep13temp2sab = new Episodio(13, "La pasión de Sabrina Spellman", 60);
+        /*ep13temp2sab.nombre = "La pasión de Sabrina Spellman";
+        ep13temp2sab.numero = 13;*/
         ep13temp2sab.temporadas = temp2;
         temp2.episodios.add(ep13temp2sab);
 
@@ -84,7 +85,6 @@ public class Pooflix {
 
         this.series.add(sabrina);
 
-        
 
     }
 
@@ -96,19 +96,19 @@ public class Pooflix {
         Temporada tem1umb = new Temporada();
         tem1umb.numero = 1;
         umbrella.temporadas.add(tem1umb);
-        Episodio ep1tem1umb = new Episodio();
-        ep1tem1umb.nombre = "Solo nos vemos en los casamientos o velorios";
-        ep1tem1umb.numero = 2;
+        Episodio ep1tem1umb = new Episodio(1, "Solo nos vemos en los casamientos o velorios", 60);
+        /*ep1tem1umb.nombre = "Solo nos vemos en los casamientos o velorios";
+        ep1tem1umb.numero = 1;*/
         ep1tem1umb.temporadas = tem1umb;
         tem1umb.episodios.add(ep1tem1umb);
-        Episodio ep2tem1umb = new Episodio();
-        ep2tem1umb.nombre = "Run Boy Run";
-        ep2tem1umb.numero = 2;
+        Episodio ep2tem1umb = new Episodio(2, "Run Boy Run", 70);
+        /*ep2tem1umb.nombre = "Run Boy Run";
+        ep2tem1umb.numero = 2;*/
         ep2tem1umb.temporadas = tem1umb;
         tem1umb.episodios.add(ep2tem1umb);
-        Episodio ep3tem1umb = new Episodio();
-        ep3tem1umb.nombre = "Extra Ordinaria";
-        ep3tem1umb.numero = 3;
+        Episodio ep3tem1umb = new Episodio(3, "Extra Ordinaria", 65);
+        /*ep3tem1umb.nombre = "Extra Ordinaria";
+        ep3tem1umb.numero = 3;*/
         ep3tem1umb.temporadas = tem1umb;
         tem1umb.episodios.add(ep3tem1umb);
 

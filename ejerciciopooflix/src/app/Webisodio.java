@@ -1,6 +1,11 @@
 package app;
 
 public class Webisodio extends Episodio {
+    public Webisodio(int numero, String nombre, int duracionEnMinutos, String url){
+        super(numero, nombre, duracionEnMinutos);
+        this.url = url;
+    }
+
     public String url;
 
     @Override //Anotacion que indica que el metodo se sobreescribe (redefinicion)

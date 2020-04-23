@@ -44,9 +44,10 @@ public class App {
 
         epiDemo.reproducir();
 
-        // priero: preguntar si es un objeto de X tipo, usando el operados "instanceof"
+        // primero: preguntar si es un objeto de X tipo, usando el operados "instanceof"
         // segundo: usando el operador de casteo(es decir, "transformando"/casteando la
         // referencia)
+        //instanceof pregunta si epidemo es una variable de tipo websidio?
         if (epiDemo instanceof Webisodio) {
             Webisodio webi = (Webisodio) epiDemo;
             webi.enviarAlertaDeQueEstaOnline();
