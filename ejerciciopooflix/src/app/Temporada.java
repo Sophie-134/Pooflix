@@ -4,12 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Temporada {
-    public int numero;
-    public List<Episodio> episodios = new ArrayList<>();
+    private int numero;
+    private List<Episodio> episodios = new ArrayList<>();
+
+    public int getNumero() {
+        return this.numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+
+    }
+
+    public List<Episodio> getEpisodios() {
+        return this.episodios;
+    }
+
+    public void setEpisodios(List<Episodio> episodios) {
+        this.episodios = episodios;
+    }
 
     public Episodio getEpisodio(int nro) {
         for (Episodio episod : this.episodios) {
-            if (episod.numero == nro) {
+            if (episod.getNumero() == nro) {
                 return episod;
             }
         }

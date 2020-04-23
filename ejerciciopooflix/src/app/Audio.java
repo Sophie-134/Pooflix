@@ -1,6 +1,13 @@
 package app;
 
 public class Audio {
-    public String idioma;
+    private String idioma;
+
+    public String getAudio(){
+        return this.idioma;
+    }
+    public void setAudio(String idioma){
+        this.idioma = idioma;
+    }
 
 }
